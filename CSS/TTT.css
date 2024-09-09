@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 3px;
+    border-radius: 8px;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;  /* Ensure the canvas is behind the table */
+    width: 100%;
+    height: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    border-style: hidden;
+    z-index: 2;
+}
+td{
+    cursor: pointer;
+    border: 4px solid burlywood;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
